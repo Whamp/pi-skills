@@ -4,6 +4,13 @@ import { Readability } from "@mozilla/readability";
 import { JSDOM } from "jsdom";
 import TurndownService from "turndown";
 import { gfm } from "turndown-plugin-gfm";
+import dotenv from "dotenv";
+import path from "path";
+import { fileURLToPath } from "url";
+
+// Load .env from the script's directory
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+dotenv.config({ path: path.join(__dirname, ".env") });
 
 const args = process.argv.slice(2);
 
@@ -44,7 +51,7 @@ if (!query) {
 	console.log("  --country <code>      Country code for results (default: US)");
 	console.log("  --freshness <period>  Filter by time: pd (day), pw (week), pm (month), py (year)");
 	console.log("\nEnvironment:");
-	console.log("  BRAVE_API_KEY         Required. Your Brave Search API key.");
+	console.log("  BRAVE_API_KEY         Required. Your Brave Search API key (in .env file).");
 	console.log("\nExamples:");
 	console.log('  search.js "javascript async await"');
 	console.log('  search.js "rust programming" -n 10');

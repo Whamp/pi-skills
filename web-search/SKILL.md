@@ -14,9 +14,9 @@ Requires a Brave Search API account with a free subscription. A credit card is r
 1. Create an account at https://api-dashboard.search.brave.com/register
 2. Create a "Free AI" subscription
 3. Create an API key for the subscription
-4. Add to your shell profile (`~/.profile` or `~/.zprofile` for zsh):
+4. Create a `.env` file in the tool directory (`{baseDir}/.env`) with your key:
    ```bash
-   export BRAVE_API_KEY="your-api-key-here"
+   BRAVE_API_KEY="your-api-key-here"
    ```
 5. Install dependencies (run once):
    ```bash

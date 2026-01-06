@@ -1,5 +1,5 @@
 {
-	"name": "brave-search",
+	"name": "web-search",
 	"version": "1.0.0",
 	"type": "module",
 	"description": "Headless web search via Brave Search - no browser required",
@@ -7,6 +7,7 @@
 	"license": "MIT",
 	"dependencies": {
 		"@mozilla/readability": "^0.6.0",
+		"dotenv": "^17.2.3",
 		"jsdom": "^27.0.1",
 		"turndown": "^7.2.2",
 		"turndown-plugin-gfm": "^1.0.2"
