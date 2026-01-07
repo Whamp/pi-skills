@@ -1,0 +1,10 @@
+{
+  "name": "zai-zread",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "z.ai Zread MCP tools for reading GitHub repositories",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.0.0"
+  }
+}

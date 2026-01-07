@@ -1,0 +1,10 @@
+{
+  "name": "zai-vision",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "z.ai Vision MCP tools for AI agents",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.0.0"
+  }
+}
